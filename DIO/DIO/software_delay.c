@@ -20,7 +20,7 @@ Function Return      : N/A
 ***********************************************************************************************/
 
 void function_delay(uint32 delay_time){
-	uint32 counter = 0 ;
+	uint32 counter = NUM_ZERO ;
 	while(counter != delay_time){
 		counter++ ;
 	}

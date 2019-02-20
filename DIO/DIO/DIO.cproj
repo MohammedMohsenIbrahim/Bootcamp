@@ -113,7 +113,6 @@
             <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
-        <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
         <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
         <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
         <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
@@ -133,6 +132,27 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="APP\Questions\emoji.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\Questions\emoji.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\Questions\emoji_config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\Questions\questions.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\Questions\questions.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\Traffic_light_int\Traffic_light_int.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\Traffic_light_int\Traffic_light_int.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="BitwiseOperations.h">
       <SubType>compile</SubType>
     </Compile>
@@ -142,10 +162,40 @@
     <Compile Include="DIO.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="HAL\headers\keypad.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\headers\keypad_cfg.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\headers\LCD.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\headers\LCD_config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\headers\seven_seg.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\headers\seven_seg_config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\sources\keypad.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\sources\LCD.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\sources\seven_seg.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="ICU.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="ICU.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ISR.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="main.c">
@@ -169,6 +219,14 @@
     <Compile Include="types.h">
       <SubType>compile</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="APP\Traffic_light_int" />
+    <Folder Include="APP\Questions" />
+    <Folder Include="HAL" />
+    <Folder Include="HAL\headers" />
+    <Folder Include="HAL\sources" />
+    <Folder Include="APP" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>

@@ -12,16 +12,25 @@
 #include "software_delay.h"
 #include "Timers.h"
 #include "ICU.h"
+#include "HAL/headers/seven_seg.h"
+#include "HAL/headers/keypad.h"
+#define  F_CPU 16000000
+#include "util/delay.h"
+#include "HAL/headers/LCD.h"
+#include "APP/Questions/questions.h"
 
 int main(void)
 {
     /* Replace with your application code */
-	Timer1_ICU_init();
-	
-	float d_c ;
+	APP_questions_init();
+	APP_questions_show_welcome_screen();
     while(1) 
     {
-		d_c = Timer1_ICU_calculate_duty_cycle();
+		APP_questions_press_any_btn_to_start();
+		APP_questions_questions_stage();
+		APP_questions_wait_for_answer();
+		APP_questions_show_score();
+		
 	}
 }
 

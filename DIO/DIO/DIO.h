@@ -21,6 +21,15 @@
 #define INPUT  0
 #define OUTPUT 1
 
+#define PORTA_STARTING_PIN_NUM		0
+#define PORTA_ENDING_PIN_NUM		7
+#define PORTB_STARTING_PIN_NUM		8
+#define PORTB_ENDING_PIN_NUM		15
+#define PORTC_STARTING_PIN_NUM		16
+#define PORTC_ENDING_PIN_NUM		23
+#define PORTD_STARTING_PIN_NUM		24
+#define PORTD_ENDING_PIN_NUM		31
+
 
 /************************************* Functions Declarations *************************************/
 void DIO_WritePin(uint8 PinNum,uint8 PinValue);

@@ -12,7 +12,21 @@ main.d main.o: .././main.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
  .././types.h .././BitwiseOperations.h .././DIO.h \
  .././Memory_Mapped_Registers.h .././software_delay.h .././Timers.h \
- .././ICU.h
+ .././ICU.h .././HAL/headers/seven_seg.h \
+ .././HAL/headers/seven_seg_config.h \
+ .././HAL/headers/../../BitwiseOperations.h \
+ .././HAL/headers/../../types.h .././HAL/headers/../../DIO.h \
+ .././HAL/headers/../../software_delay.h \
+ .././HAL/headers/../../Memory_Mapped_Registers.h \
+ .././HAL/headers/keypad.h .././HAL/headers/keypad_cfg.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
+ .././HAL/headers/LCD.h .././HAL/headers/LCD_config.h \
+ .././HAL/headers/../../Timers.h .././APP/Questions/questions.h \
+ .././APP/Questions/../../HAL/headers/LCD.h \
+ .././APP/Questions/../../DIO.h .././APP/Questions/emoji.h \
+ .././APP/Questions/../../Types.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -49,3 +63,43 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 .././Timers.h:
 
 .././ICU.h:
+
+.././HAL/headers/seven_seg.h:
+
+.././HAL/headers/seven_seg_config.h:
+
+.././HAL/headers/../../BitwiseOperations.h:
+
+.././HAL/headers/../../types.h:
+
+.././HAL/headers/../../DIO.h:
+
+.././HAL/headers/../../software_delay.h:
+
+.././HAL/headers/../../Memory_Mapped_Registers.h:
+
+.././HAL/headers/keypad.h:
+
+.././HAL/headers/keypad_cfg.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
+
+.././HAL/headers/LCD.h:
+
+.././HAL/headers/LCD_config.h:
+
+.././HAL/headers/../../Timers.h:
+
+.././APP/Questions/questions.h:
+
+.././APP/Questions/../../HAL/headers/LCD.h:
+
+.././APP/Questions/../../DIO.h:
+
+.././APP/Questions/emoji.h:
+
+.././APP/Questions/../../Types.h:

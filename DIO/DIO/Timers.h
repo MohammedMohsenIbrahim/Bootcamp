@@ -14,10 +14,28 @@
 #include "BitwiseOperations.h"
 #include "Memory_Mapped_Registers.h"
 #include "DIO.h"
+/*************************************** Definitions ********************************************/
+#define NUM_ZERO					0
+
+#define TIMER0_PRESCALER_BIT0		0
+#define TIMER0_PRESCALER_BIT1		1
+#define TIMER0_PRESCALER_BIT2		2
+
+#define TIMER1_PRESCALER_BIT0		0
+#define TIMER1_PRESCALER_BIT1		1
+#define TIMER1_PRESCALER_BIT2		2
 
 /***************************** TIMER CONFIGURATIONS DEFINITIONS *********************************/
 #define STOP_TIMER						   0
 #define TIMER_NO_PRESCALER				   1
+#define TIMER_PRESCLAER_8				   8
+#define TIMER_PRESCALER_16				   16
+#define TIMER_PRESCALER_32				   32
+#define TIMER_PRESCALER_64				   64
+#define TIMER_PRESCALER_128				   128	
+#define TIMER_PRESCLAER_256				   256
+#define TIMER_PRESCLAER_1024			   1024
+
 #define TIMER_EXTERNAL_CLOCK_FALLING_EDGE  6
 #define TIMER_EXTERNAL_CLOCK_RISING_EDGE   7
 
