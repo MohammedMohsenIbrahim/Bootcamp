@@ -9,11 +9,8 @@
 #ifndef TYPES_H_
 #define TYPES_H_
 
-#define NULL				'\0'
-
-
-
-
+#define NULL '\0' 
+;
 typedef unsigned char		 uint8  ;
 typedef signed   char		 int8   ;
 typedef unsigned short		 uint16 ;

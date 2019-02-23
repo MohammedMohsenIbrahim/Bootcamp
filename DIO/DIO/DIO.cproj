@@ -162,6 +162,12 @@
     <Compile Include="DIO.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="HAL\headers\DC_Motor.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\headers\DC_Motor_config.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="HAL\headers\keypad.h">
       <SubType>compile</SubType>
     </Compile>
@@ -178,6 +184,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="HAL\headers\seven_seg_config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\sources\DC_Motor.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="HAL\sources\keypad.c">
@@ -199,6 +208,15 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\Sources\PWM.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\Headers\PWM.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\Headers\PWM_config.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Memory_Mapped_Registers.h">
@@ -227,6 +245,9 @@
     <Folder Include="HAL\headers" />
     <Folder Include="HAL\sources" />
     <Folder Include="APP" />
+    <Folder Include="MCAL" />
+    <Folder Include="MCAL\Sources" />
+    <Folder Include="MCAL\Headers" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>

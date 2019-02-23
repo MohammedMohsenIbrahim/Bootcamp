@@ -22,11 +22,22 @@ main.d main.o: .././main.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
+ .././MCAL/Headers/PWM.h .././MCAL/Headers/PWM_config.h \
+ .././MCAL/Headers/../../types.h \
+ .././MCAL/Headers/../../BitwiseOperations.h \
+ .././MCAL/Headers/../../Memory_Mapped_Registers.h \
+ .././MCAL/Headers/../../DIO.h .././MCAL/Headers/../../Timers.h \
  .././HAL/headers/LCD.h .././HAL/headers/LCD_config.h \
  .././HAL/headers/../../Timers.h .././APP/Questions/questions.h \
  .././APP/Questions/../../HAL/headers/LCD.h \
  .././APP/Questions/../../DIO.h .././APP/Questions/emoji.h \
- .././APP/Questions/../../Types.h
+ .././APP/Questions/../../Types.h \
+ .././APP/Traffic_light_int/Traffic_light_int.h \
+ .././APP/Traffic_light_int/../../DIO.h \
+ .././APP/Traffic_light_int/../../Timers.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
+ .././HAL/headers/DC_Motor.h .././HAL/headers/DC_Motor_config.h \
+ .././HAL/headers/../../MCAL/Headers/PWM.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -88,6 +99,20 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
 
+.././MCAL/Headers/PWM.h:
+
+.././MCAL/Headers/PWM_config.h:
+
+.././MCAL/Headers/../../types.h:
+
+.././MCAL/Headers/../../BitwiseOperations.h:
+
+.././MCAL/Headers/../../Memory_Mapped_Registers.h:
+
+.././MCAL/Headers/../../DIO.h:
+
+.././MCAL/Headers/../../Timers.h:
+
 .././HAL/headers/LCD.h:
 
 .././HAL/headers/LCD_config.h:
@@ -103,3 +128,17 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 .././APP/Questions/emoji.h:
 
 .././APP/Questions/../../Types.h:
+
+.././APP/Traffic_light_int/Traffic_light_int.h:
+
+.././APP/Traffic_light_int/../../DIO.h:
+
+.././APP/Traffic_light_int/../../Timers.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h:
+
+.././HAL/headers/DC_Motor.h:
+
+.././HAL/headers/DC_Motor_config.h:
+
+.././HAL/headers/../../MCAL/Headers/PWM.h:

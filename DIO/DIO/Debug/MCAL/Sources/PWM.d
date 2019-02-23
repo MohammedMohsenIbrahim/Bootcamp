@@ -1,5 +1,14 @@
-ICU.d ICU.o: .././ICU.c .././ICU.h .././BitwiseOperations.h \
- .././Memory_Mapped_Registers.h .././types.h .././Timers.h .././DIO.h \
+MCAL/Sources/PWM.d MCAL/Sources/PWM.o: ../MCAL/Sources/PWM.c \
+ ../MCAL/Sources/../headers/PWM.h ../MCAL/Sources/../headers/PWM_config.h \
+ ../MCAL/Sources/../headers/../../types.h \
+ ../MCAL/Sources/../headers/../../BitwiseOperations.h \
+ ../MCAL/Sources/../headers/../../Memory_Mapped_Registers.h \
+ ../MCAL/Sources/../headers/../../types.h \
+ ../MCAL/Sources/../headers/../../DIO.h \
+ ../MCAL/Sources/../headers/../../Memory_Mapped_Registers.h \
+ ../MCAL/Sources/../headers/../../BitwiseOperations.h \
+ ../MCAL/Sources/../headers/../../Timers.h \
+ ../MCAL/Sources/../headers/../../DIO.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -12,17 +21,27 @@ ICU.d ICU.o: .././ICU.c .././ICU.h .././BitwiseOperations.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h
 
-.././ICU.h:
+../MCAL/Sources/../headers/PWM.h:
 
-.././BitwiseOperations.h:
+../MCAL/Sources/../headers/PWM_config.h:
 
-.././Memory_Mapped_Registers.h:
+../MCAL/Sources/../headers/../../types.h:
 
-.././types.h:
+../MCAL/Sources/../headers/../../BitwiseOperations.h:
 
-.././Timers.h:
+../MCAL/Sources/../headers/../../Memory_Mapped_Registers.h:
 
-.././DIO.h:
+../MCAL/Sources/../headers/../../types.h:
+
+../MCAL/Sources/../headers/../../DIO.h:
+
+../MCAL/Sources/../headers/../../Memory_Mapped_Registers.h:
+
+../MCAL/Sources/../headers/../../BitwiseOperations.h:
+
+../MCAL/Sources/../headers/../../Timers.h:
+
+../MCAL/Sources/../headers/../../DIO.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 

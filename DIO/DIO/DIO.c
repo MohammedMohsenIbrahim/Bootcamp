@@ -60,26 +60,26 @@ Functions Return     : N/A
 void DIO_SetPinDirection(uint8 PinNum,uint8 PinDirection){
 	switch(PinDirection){			/* check the direction of the pin wanted */
 		case INPUT :				/* case input pin */
-		if(PinNum >= PORTA_STARTING_PIN_NUM && PinNum <= PORTA_ENDING_PIN_NUM){		/* case porta */
-			Clear_Bit(DDR_A,PinNum);
+			if(PinNum >= PORTA_STARTING_PIN_NUM && PinNum <= PORTA_ENDING_PIN_NUM){		/* case porta */
+				Clear_Bit(DDR_A,PinNum);
 			}else if(PinNum >= PORTB_STARTING_PIN_NUM && PinNum <= PORTB_ENDING_PIN_NUM){
-			Clear_Bit(DDR_B,(PinNum - PORTB_STARTING_PIN_NUM));
+				Clear_Bit(DDR_B,(PinNum - PORTB_STARTING_PIN_NUM));
 			}else if(PinNum >= PORTC_STARTING_PIN_NUM && PinNum <= PORTC_ENDING_PIN_NUM){
-			Clear_Bit(DDR_C,(PinNum - PORTC_STARTING_PIN_NUM));
+				Clear_Bit(DDR_C,(PinNum - PORTC_STARTING_PIN_NUM));
 			}else if(PinNum >= PORTD_STARTING_PIN_NUM && PinNum <= PORTD_ENDING_PIN_NUM){
-			Clear_Bit(DDR_D,(PinNum - PORTD_STARTING_PIN_NUM));
-		}
+				Clear_Bit(DDR_D,(PinNum - PORTD_STARTING_PIN_NUM));
+			}
 		break;
 		case OUTPUT :
-		if(PinNum >= PORTA_STARTING_PIN_NUM && PinNum <= PORTA_ENDING_PIN_NUM){
-			Set_Bit(DDR_A,PinNum);
+			if(PinNum >= PORTA_STARTING_PIN_NUM && PinNum <= PORTA_ENDING_PIN_NUM){
+				Set_Bit(DDR_A,PinNum);
 			}else if(PinNum >= PORTB_STARTING_PIN_NUM && PinNum <= PORTB_ENDING_PIN_NUM){
-			Set_Bit(DDR_B,(PinNum - PORTB_STARTING_PIN_NUM));
+				Set_Bit(DDR_B,(PinNum - PORTB_STARTING_PIN_NUM));
 			}else if(PinNum >= PORTC_STARTING_PIN_NUM && PinNum <= PORTC_ENDING_PIN_NUM){
-			Set_Bit(DDR_C,(PinNum - PORTC_STARTING_PIN_NUM));
+				Set_Bit(DDR_C,(PinNum - PORTC_STARTING_PIN_NUM));
 			}else if(PinNum >= PORTD_STARTING_PIN_NUM && PinNum <= PORTD_ENDING_PIN_NUM){
-			Set_Bit(DDR_D,(PinNum - PORTD_STARTING_PIN_NUM));
-		}
+				Set_Bit(DDR_D,(PinNum - PORTD_STARTING_PIN_NUM));
+			}
 		break;
 		default:
 		break;

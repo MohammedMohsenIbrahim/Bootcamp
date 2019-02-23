@@ -16,21 +16,26 @@
 #include "HAL/headers/keypad.h"
 #define  F_CPU 16000000
 #include "util/delay.h"
+#include "MCAL/Headers/PWM.h"
 #include "HAL/headers/LCD.h"
 #include "APP/Questions/questions.h"
+#include "APP/Traffic_light_int/Traffic_light_int.h"
+#include "HAL/headers/DC_Motor.h"
 
 int main(void)
 {
+	uint8 i ;
     /* Replace with your application code */
-	APP_questions_init();
-	APP_questions_show_welcome_screen();
+	DC_Motor_init();
+	DC_Motor1_direction(DC_MOTOR_CW);
+	DC_MOTOR1_Control_Speed(200);
     while(1) 
     {
-		APP_questions_press_any_btn_to_start();
-		APP_questions_questions_stage();
-		APP_questions_wait_for_answer();
-		APP_questions_show_score();
-		
+	//	for(i=1;i<10;i++){
+	//		DC_MOTOR1_Control_Speed(200);
+	//		_delay_ms(2000);
+	//	}
+
 	}
 }
 
